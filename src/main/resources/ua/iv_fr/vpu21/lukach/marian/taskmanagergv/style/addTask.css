@@ -1,0 +1,68 @@
+.pane1{
+    -fx-background-color: radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0% 100.0%, radius 100.0%, #23d0f3ff 0.0%, #d791f9ff 50.0%, #fe7b84ff 100.0%);
+}
+.text-field{
+    -fx-background-radius: 15px;
+    -fx-background-color: #9999ff;
+    -fx-prompt-text-fill: #333366;
+}
+.text-field-warning{
+    -fx-background-radius: 15px;
+    -fx-background-color: #9999ff;
+    -fx-prompt-text-fill: #333366;
+    -fx-border-radius: 15px;
+    -fx-border-color: red;
+    -fx-border-width: 3px;
+}
+.text-area{
+    -fx-background-radius: 15px;
+    -fx-background-color: #9999ff;
+    -fx-prompt-text-fill: #333366;
+}
+.text-area-warning{
+    -fx-background-radius: 15px;
+    -fx-background-color: #9999ff;
+    -fx-prompt-text-fill: #333366;
+    -fx-border-color: red;
+    -fx-border-radius: 15px;
+    -fx-border-width: 3;
+
+}
+.content {
+    -fx-background-color: transparent;
+}
+.viewport{
+    -fx-background-color: transparent;
+}
+.button-save{
+    -fx-background-color: #ffff00;
+    -fx-background-radius: 8px;
+    -fx-border-width: 5px;
+    -fx-border-color:#009966;
+    -fx-border-radius: 5px;
+}
+.button-cancel{
+    -fx-background-color: red;
+    -fx-background-radius: 8px;
+    -fx-border-width: 5px;
+    -fx-border-color:#ffff00;
+    -fx-border-radius: 5px;
+}
+.button-save:pressed{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.button-cancel:pressed{
+     -fx-border-color: red;
+ }
+.date-picker{
+    -fx-background-color: transparent;
+}
+.arrow-button{
+    -fx-background-color: #99cc66;
+    -fx-background-radius: 15px;
+}
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #0066cc;
+    -fx-text-fill: #9999ff;
+}

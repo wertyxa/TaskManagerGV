@@ -1,0 +1,48 @@
+.batton{
+    -fx-background-color: transparent;
+}
+.batton:pressed{
+    -fx-background-color: black;
+}
+.button{
+    -fx-background-color: transparent;
+}
+.button:pressed{
+    -fx-background-color: black;
+}
+.table-row-cell:selected .table-cell{
+    -fx-background-color: #ffffcc;
+    -fx-text-fill: #333333;
+}
+.buttonLogin{
+    -fx-background-radius: 8px;
+    -fx-background-color: #009966;
+    -fx-border-width: 5px;
+    -fx-border-color: #ffff00;
+    -fx-border-radius: 5px;
+}
+.buttonLogin:pressed{
+    -fx-background-radius: 8px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ffffff;
+}
+.buttonLoginXml{
+    -fx-background-color: #ffff00;
+    -fx-background-radius: 8px;
+    -fx-border-width: 5px;
+    -fx-border-color:#009966;
+    -fx-border-radius: 5px;
+}
+.buttonLoginXml:pressed{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ffffff;
+}
+.pane1{
+    -fx-background-color: radial-gradient(focus-angle 0.0deg, focus-distance 0.0% , center 100.0% 100.0%, radius 100.0%, #23d0f3ff 0.0%, #d791f9ff 50.0%, #fe7b84ff 100.0%);
+
+}
+.text-field{
+    -fx-background-radius: 15px;
+    -fx-background-color: #9999ff;
+    -fx-prompt-text-fill: #333366;
+}

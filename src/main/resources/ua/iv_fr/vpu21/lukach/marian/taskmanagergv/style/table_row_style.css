@@ -1,0 +1,24 @@
+.table-row-cell:empty .table-cell{
+    -fx-border-width: 0px;
+    -fx-background-color: #ccccff;
+}
+.table-view .column-header, .column-header .label{
+    -fx-background-color: #9966cc;
+    -fx-text-fill: #ffcc99;
+}
+.table-column{
+    -fx-alignment: CENTER;
+
+}
+.button {
+    -fx-background-color: transparent;
+}
+.table-row-cell:selected .table-cell{
+    -fx-border-color: #333399;
+    -fx-border-width: 2px;
+    -fx-text-fill: #333333;
+    -fx-background-color: #7575ff;
+}
+.table-row-cell {
+    -fx-background-color: #ccccff;
+}
