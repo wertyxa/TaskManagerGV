@@ -73,6 +73,9 @@ public class EditTaskController {
             startController.changeTask(idTask,editTask);
             saveButton.getScene().getWindow().hide();
         });
+        cancelButton.setOnAction(a ->{
+            cancelButton.getScene().getWindow().hide();
+        });
 
     }
 

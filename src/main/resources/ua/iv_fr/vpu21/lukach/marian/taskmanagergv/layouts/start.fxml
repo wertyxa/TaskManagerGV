@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.geometry.Rectangle2D?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1200.0" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.iv_fr.vpu21.lukach.marian.taskmanagergv.controllers.StartController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="700.0" minWidth="1200.0" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #ccccff;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.iv_fr.vpu21.lukach.marian.taskmanagergv.controllers.StartController">
    <children>
       <MenuBar style="-fx-background-color: #ccccf0; -fx-border-color: #996699;">
         <menus>
           <Menu mnemonicParsing="false" text="Користувач">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#changeUser" text="Змінинити користувача" />
+              <MenuItem mnemonicParsing="false" onAction="#changeUser" text="Змінити користувача" />
                   <MenuItem mnemonicParsing="false" onAction="#closeUser" text="Закрити" />
             </items>
           </Menu>
@@ -46,6 +35,10 @@
       <BorderPane VBox.vgrow="ALWAYS">
          <center>
             <TableView fx:id="tableTasks" editable="true" stylesheets="@../style/table_row_style.css" BorderPane.alignment="CENTER">
+              <placeholder>
+                <Pane style="-fx-background-color: #9999ff">
+                </Pane>
+              </placeholder>
               <columns>
                 <TableColumn fx:id="numberMandateColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="№ Доручення" />
                 <TableColumn fx:id="nameTaskColumn" prefWidth="280.80003356933594" text="Назва" />

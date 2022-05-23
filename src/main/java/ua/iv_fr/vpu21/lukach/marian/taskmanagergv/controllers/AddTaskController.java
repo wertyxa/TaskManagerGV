@@ -67,6 +67,9 @@ public class AddTaskController {
             alert.showAndWait();
             clear();
         });
+        cancelButton.setOnAction(a ->{
+            cancelButton.getScene().getWindow().hide();
+        });
     }
 
     private void texaAreaWarning() {
