@@ -105,31 +105,7 @@ public class AddTaskController {
     }
 
     private void checkWarning() {
-        if (warningMandate){
-            saveButton.setDisable(false);
-            if (warningName){
-                saveButton.setDisable(false);
-                if (warningStart){
-                    saveButton.setDisable(false);
-                    if (warningEnd){
-                        saveButton.setDisable(false);
-                        if (warningExecutor){
-                            saveButton.setDisable(false);
-                        }else {
-                            saveButton.setDisable(true);
-                        }
-                    }else {
-                        saveButton.setDisable(true);
-                    }
-                }else {
-                    saveButton.setDisable(true);
-                }
-            }else {
-                saveButton.setDisable(true);
-            }
-        }else {
-            saveButton.setDisable(true);
-        }
+        saveBUtton.setDisable(!warningMandate || !warningName || !warningStart || !warningEnd || !warningExecutor);
     }
 
     private void textInWarning(TextField textField) {
